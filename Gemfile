@@ -31,6 +31,8 @@ gem 'cloudinary', '~> 1.16.0'
 
 gem 'devise'
 
+gem 'font-awesome-sass'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
