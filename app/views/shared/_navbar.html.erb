@@ -21,29 +21,30 @@
       <li class="nav-item">
         <a class="nav-link" href="/">Other Kits <span class="sr-only">(current)</span></a>
       </li>
+
+      <!--DROPDOWN-->
+      <%# <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> %>
     </ul>
 
     <div>
       <ul class="navbar-nav mr-auto">
         <% if user_signed_in? %>
-          <div class="dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              My Account
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
-          <!--
           <li class="nav-item active">
-            <a class="nav-link mr-2" href="/">My Account<span class="sr-only">(current)</span></a>
+            <a class="nav-link mr-2" href="accounts/show">My Account<span class="sr-only">(current)</span></a>
           </li>
           <li>
             <%# <i class="fas fa-circle mr-3 p-0"></i> %>
           </li>
-          -->
           <li class="nav-item active">
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link btn btn-secondary" %>
           </li>

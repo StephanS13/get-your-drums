@@ -1,0 +1,43 @@
+.card-instrument-inline {
+  overflow: hidden;
+  width: 300px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.card-instrument-avatar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-instrument-inline img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-instrument-inline h2 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.card-instrument-inline p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+// .text-instrument-inline {
+//   overflow: hidden;
+//   display: -webkit-box;
+//   -webkit-line-clamp: 3;
+//   -webkit-box-orient: vertical;
+//   font-size: 15px;
+// }
+
