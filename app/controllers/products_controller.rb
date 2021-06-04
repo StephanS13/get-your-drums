@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
+    @category = ["Producers kits", "Machines kits", "Instruments", "Other kits"]
   end
 
   def show
