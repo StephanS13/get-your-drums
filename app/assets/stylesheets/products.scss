@@ -1,3 +1,61 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.product-show {
+
+  .card-product-show {
+    border: solid 1px #e5e5e5;
+    border-radius: 10px;
+  }
+  
+  .product-show-title {
+    line-height: 14px;
+  
+  }
+  
+  
+  .btn-create-rental-request {
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color:#ff8e71;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-create-rental-request:hover {
+    background: #ff8e71;
+    color: white;
+  }
+  
+  .top-infos-show-card {
+    background-color: white;
+    padding: 8px 8px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  
+  @media (min-width: 576px) {
+    .homepage .cards {
+      grid-template-columns: 1fr;
+        .card{
+          width: 50vw;
+      }
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .homepage .cards {
+      grid-template-columns: 1fr 1fr;
+        .card{
+          width: 30vw;
+      }
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .homepage .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
