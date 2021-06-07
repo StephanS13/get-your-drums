@@ -7,9 +7,16 @@
 @import "devise";
 @import "home";
 @import "products";
+@import "producers";
+@import "pages/profile";
 @import "components/navbar";
 @import "components/footer";
 @import "components/carousel";
-@import "components/cardHomePage";
-@import "pages/profile";
+@import "components/card_carousel";
+@import "components/card_product";
+
+// Graphical variables
+@import "config/fonts";
+
+
 

@@ -9,8 +9,8 @@
 puts "destroy all"
 
 # Order.destroy_all
-# User.destroy_all
-# Product.destroy_all
+User.destroy_all
+Product.destroy_all
 
 puts "creates users"
 
@@ -23,19 +23,49 @@ puts "users created"
 
 puts "creates products"
 
-j_dilla = Product.new(category: "drums",
-                      name: "J_Dilla",
+dilla = Product.new(category: "drums",
+                      name: "J Dilla | Dilla Dog kit",
                       price: 19.90,
-                      content:  "20 kicks, 30 hats, 25 snares, 15 percussions, 6 drum breaks",
-                      description: "Known for his crisps productions, this drum kit gathers the best of Jay Dee’s drums style and basslines.
-                      Single hits or drum break loops, these sounds were sampled through the MPC 60 as well as processed through the SSL board to filter and give you the highest quality without compromising with Dilla’s reckonizable sound.",
+                      content:  "119 sounds",
+                      description: "This kit gathers the best of Jay Dee’s drums style and basslines.
+                      These sounds were processed in order to provide high quality sounds while conservating Dilla’s reckonizable sound type.",
                       rating: 4,
                       tags: "drums, drum kit, kick, snare, hat, J Dilla, J-Dilla, Dilla Dog",
                       sound_name: "kick_1"
                       )
                       
 file = File.open(Rails.root.join('db/seeds/images/products/jd.jpg'))
-j_dilla.photo.attach(io: file, filename: 'jd.jpg', content_type: 'image/jpg')
-j_dilla.save!
+dilla.photo.attach(io: file, filename: 'jd.jpg', content_type: 'image/jpg')
+dilla.save!
+
+dre = Product.new(category: "drums",
+                      name: "Dr. Dre | The Chronic kit",
+                      price: 24.90,
+                      content:  "125 sounds",
+                      description: "This kit gathers the best of Dr. Dre’s drums style and basslines.
+                      These sounds were processed in order to provide high quality sounds while conservating Dre’s reckonizable sound type.",
+                      rating: 5,
+                      tags: "drums, drum kit, kick, snare, hat, Dr. Dre, The Chronic",
+                      sound_name: "kick_2"
+                      )
+                      
+file = File.open(Rails.root.join('db/seeds/images/products/dre.jpg'))
+dre.photo.attach(io: file, filename: 'dre.jpg', content_type: 'image/jpg')
+dre.save!
+
+primo = Product.new(category: "drums",
+                      name: "DJ Premier | Full Clip kit",
+                      price: 24.90,
+                      content:  "209 sounds",
+                      description: "This kit gathers the best of Premier’s drums style and basslines.
+                      These sounds were processed in order to provide high quality sounds while conservating Premo’s reckonizable sound type.",
+                      rating: 4,
+                      tags: "drums, drum kit, kick, snare, hat, DJ Premier, Premier",
+                      sound_name: "kick_3"
+                      )
+                      
+file = File.open(Rails.root.join('db/seeds/images/products/primo.jpg'))
+primo.photo.attach(io: file, filename: 'primo.jpg', content_type: 'image/jpg')
+primo.save!
 
 puts "products created"

@@ -10,6 +10,11 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
+  def producers
+    @products = Product.all
+    @category = ["Producers kits", "Machines kits", "Instruments", "Other kits"]
+  end
+
   private
 
   def product_params

@@ -1,0 +1,37 @@
+.price {
+  margin-top: 30px;
+}
+
+.stacked--left {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+    &:before,
+    &:after {
+        transform-origin: right center;
+    }
+    
+    &:hover {
+        transform: translate(-15px, 0);
+        
+        &:before { transform: translate(5px, 0) scale(0.95); }
+        &:after { transform: translate(10px, 0) scale(0.90); }
+    }
+}
+
+.card {
+  @include media-breakpoint-only(xs) {
+    column-count: 1;
+  }
+  @include media-breakpoint-only(s) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(m) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
