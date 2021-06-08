@@ -5,7 +5,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto mt-3">
       <li class="nav-item">
         <%= link_to "All Drum Kits", products_index_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li>
@@ -22,6 +22,13 @@
       <li class="nav-item">
         <%= link_to "Other Kits", products_other_kits_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item ml-3 mb-2">
+        <%= link_to products_sampler_path do %>
+          <%= cl_image_tag("https://res.cloudinary.com/dehuad3aa/image/upload/v1623138044/get-your-drums/mpc.png",
+      width: 80, height: 60, crop: :fill) %>
+        <% end %>
+        <!-- <%= link_to '""', pages_home_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
+      </li> -->
 
       <!--DROPDOWN-->
       <%# <li class="nav-item dropdown">
@@ -70,5 +77,6 @@
 <!-- LOGO BAR -->
 <nav id="logo" class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center align-items-baseline pt-0">
   <ul class="navbar-nav">
-    <p class="logo" style="font-family: Damion; font-size: 25px">Beatmakers.com</p>
+    <%= link_to "Beatmakers.com", pages_home_path, class:"logo", style:"font-family: Pacifico; font-size: 25px;" %>
+  </ul>
 </nav>

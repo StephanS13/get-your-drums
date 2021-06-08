@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'products/machines'
   get 'products/instruments'
   get 'products/other_kits'
+  get 'products/sampler'
   
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

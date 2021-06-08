@@ -18,6 +18,8 @@
     }
 }
 
+// BACKGROUND Image option
+
 .card {
   @include media-breakpoint-only(xs) {
     column-count: 1;

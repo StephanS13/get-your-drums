@@ -1,114 +1,84 @@
-<div class="carousel-item col-md-4 active">
-  <div class="map-container">
-    <div>
-      <div class="card-instrument-inline m-4">
-        <img class="img-fluid d-block" src="jd.jpg" alt="slide 1">
-        <div class="p-3">
-          <div class="div">
-            <h2>J Dilla</h2>
-            <h6><span class="">119 sounds</span></h6>
-            <div class="btn btn-success">$29,99</div>	
+
+<% @products.each do |product| %>
+  <div class="carousel-item col-md-4 active">
+    <div class="map-container">
+      <div class="card mb-3" style="max-width: 540px; max-height: 170px">
+        <div class="row no-gutters">
+          <div class="col-md-4 img-fluid image">
+            <%= cl_image_tag product.photo.key, width: 180, height: 169, crop: :fill %>
           </div>
-          
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><%= product.name %></h5>
+              <p class="card-text description mt-3"><%= product.content %></p>
+              <div class="price d-flex justify-content-between">
+                <p class="card-text text-right"><small class="text-muted"><%= link_to product_path(product), class: "btn btn-success" do %>
+                  $<%= product.price %>0
+                <% end %></small></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="carousel-item col-md-4">
-  <div class="map-container">
-    <div>
-      <div class="card-instrument-inline m-4">
-        <img class="img-fluid d-block" src="primo.jpg" alt="slide 2">
-        <div class="card-instrument-inline-infos p-3">
-          <h2>DJ Premier</h2> <h6><span class="text-instrument-inline">119 sounds</span></h6>
-          <div class="d-flex justify-content-end">
-            <div class="btn btn-success">$29,99</div>	
-          </div>         
+<% end %> -->
+
+
+<!--
+<% @products.each do |product| %>
+  <div class="carousel-item col-md-4">
+    <div class="map-container">
+      <div>
+        <div class="card-instrument-inline m-4">
+          <img class="img-fluid d-block" src="<%= cl_image_tag product.photo.key, crop: :fill %>" alt="slide 1">
+          <div class="card-instrument-inline-infos p-3">
+            <%= product.name %> <h6><span class="text-instrument-inline"><%= product.content %></span></h6>
+            <div class="d-flex justify-content-end">
+              <p class="card-text text-right"><small class="text-muted"><%= link_to product_path(product), class: "btn btn-success" do %>
+                  $<%= product.price %>0
+                <% end %></small></p>	
+            </div>         
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="carousel-item col-md-4">
-  <div class="map-container">
-    <div>
-      <div class="card-instrument-inline m-4">
-        <img class="img-fluid d-block" src="dre.jpg" alt="slide 3">
-        <div class="card-instrument-inline-infos p-3">
-          <h2>Dr. Dre</h2> <h6><span class="text-instrument-inline">119 sounds</span></h6>
-          <div class="d-flex justify-content-end">
-            <div class="btn btn-success">$29,99</div>	
-          </div>          
+<% end %>
+
+<!--
+  <div class="carousel-item col-md-4">
+    <div class="map-container">
+      <div>
+        <div class="card-instrument-inline m-4">
+          <img class="img-fluid d-block" src="dre.jpg" alt="slide 3">
+          <div class="card-instrument-inline-infos p-3">
+            <h2>Dr. Dre</h2> <h6><span class="text-instrument-inline">119 sounds</span></h6>
+            <div class="d-flex justify-content-end">
+              <div class="btn btn-success">$29,99</div>	
+            </div>          
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="carousel-item col-md-4">
-  <div class="map-container">
-    <div>
-      <div class="card-instrument-inline m-4">
-        <img class="img-fluid d-block" src="jd.jpg" alt="slide 4">
-        <div class="card-instrument-inline-infos p-3">
-          <h2>J Dilla</h2>
-          <h6><span class="text-instrument-inline">119 sounds</span></h6>
-          <div class="d-flex justify-content-end">
-            <div class="btn btn-success">$29,99</div>	
-          </div>          
+  <div class="carousel-item col-md-4">
+    <div class="map-container">
+      <div>
+        <div class="card-instrument-inline m-4">
+          <img class="img-fluid d-block" src="jd.jpg" alt="slide 4">
+          <div class="card-instrument-inline-infos p-3">
+            <h2>J Dilla</h2>
+            <h6><span class="text-instrument-inline">119 sounds</span></h6>
+            <div class="d-flex justify-content-end">
+              <div class="btn btn-success">$29,99</div>	
+            </div>          
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="carousel-item col-md-4">
-  <div class="map-container">
-    <div>
-      <div class="card-instrument-inline m-4">
-        <img class="img-fluid d-block" src="jd.jpg" alt="slide 5">
-        <div class="card-instrument-inline-infos p-3">
-          <h2>J Dilla</h2>
-          <h6><span class="text-instrument-inline">119 sounds</span></h6>
-          <div class="d-flex justify-content-end">
-            <div class="btn btn-success">$29,99</div>	
-          </div>          
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="carousel-item col-md-4">
-  <div class="map-container">
-    <div>
-      <div class="card-instrument-inline m-4">
-        <img class="img-fluid d-block" src="jd.jpg" alt="slide 6">
-        <div class="card-instrument-inline-infos p-3">
-          <h2>J Dilla</h2>
-          <h6><span class="text-instrument-inline">119 sounds</span></h6>
-          <div class="d-flex justify-content-end">
-            <div class="btn btn-success">$29,99</div>	
-          </div>          
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="carousel-item col-md-4">
-  <div class="map-container">
-    <div>
-      <div class="card-instrument-inline m-4">
-        <img class="img-fluid d-block" src="jd.jpg" alt="slide 7">
-        <div class="card-instrument-inline-infos p-3">
-          <h2>J Dilla</h2>
-          <h6><span class="text-instrument-inline">119 sounds</span></h6>
-          <div class="d-flex justify-content-end">
-            <div class="btn btn-success">$29,99</div>	
-          </div>          
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 
 
