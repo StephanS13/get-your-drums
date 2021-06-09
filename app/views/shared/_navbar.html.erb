@@ -1,5 +1,12 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a><img class="icon navbar-brand p-0" style="color: red" href="/" src="" height="40"></a>
+  <div>
+    <a><img class="icon navbar-brand p-0" style="color: red" href="/" src="https://res.cloudinary.com/dehuad3aa/image/upload/v1623223892/get-your-drums/icon.png" height="80">
+    <%# <div class="speaker small flex-center circle1">
+      <div class="ring small flex-center">
+        <div class="b">B</div> %>
+    </div></a>
+  </div>
+  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -23,7 +30,7 @@
         <%= link_to "Other Kits", products_other_kits_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item ml-3 mb-2">
-        <%= link_to products_sampler_path do %>
+        <%= link_to sampler_show_path do %>
           <%= cl_image_tag("https://res.cloudinary.com/dehuad3aa/image/upload/v1623138044/get-your-drums/mpc.png",
       width: 80, height: 60, crop: :fill) %>
         <% end %>

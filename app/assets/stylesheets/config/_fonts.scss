@@ -5,5 +5,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Devonshire&family=Yellowtail&display=swap');
 
-// FONT FOR BODY
+// Roboto Condensed
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+// Noto sans JP, Open sans, Roboto
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&family=Roboto&display=swap');
+
+// FONT FOR BODY
+$body-font: "Roboto", "Condensed";
+$headers-font: "Noto", "Sans", "JP";
+// $font-size-base: 1rem;
+
+// // Colors
+// $body-color: $gray;
+// $primary:    $blue;
+// $success:    $green;
+// $info:       $yellow;
+// $danger:     $salmon;
+// $warning:    $orange;
+
+// // Buttons & inputs' radius
+// $border-radius:    2px;
+// $border-radius-lg: 2px;
+// $border-radius-sm: 2px;

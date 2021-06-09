@@ -12,7 +12,22 @@ class ProductsController < ApplicationController
 
   def producers
     @products = Product.all
-    @category = ["Producers kits"]
+    @category = ["Producers"]
+  end
+
+  def machines
+    @products = Product.all
+    @category = ["Instruments"]
+  end
+
+  def instruments
+    @products = Product.all
+    @category = ["Instruments"]
+  end
+
+  def other_kits
+    @products = Product.all
+    @category = ["Other kits"]
   end
 
   def sampler
