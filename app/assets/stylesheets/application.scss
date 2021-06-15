@@ -5,18 +5,24 @@
 
 // Your CSS partials
 @import "devise";
+// pages
 @import "home";
 @import "products";
 @import "producers";
 @import "instruments";
+@import "machines";
 @import "sampler";
+// profile
 @import "pages/profile";
+// components
 @import "components/navbar";
 @import "components/footer";
+@import "components/sidebar";
 @import "components/carousel";
 @import "components/card_carousel";
 @import "components/card_product";
-@import "components/sidebar";
+@import "components/mpc";
+
 
 // Graphical variables
 @import "config/fonts";

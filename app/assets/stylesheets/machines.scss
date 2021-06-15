@@ -1,10 +1,10 @@
-.producers-wrapper {
-  // width:100%;
-  // height:100%;
-  // position:relative;
+.machines-wrapper {
+  width:100%;
+  height:100%;
+  position:relative;
 }
 
-.producers-title {
+.machines-title {
   font-family: 'Roboto';
   font-size: 32px;
   font-weight: 700;
@@ -13,7 +13,7 @@
   z-index: 1;
 }
 
-.producers-title::after {
+.machines-title::after {
   content: '';
   background: rgb(219, 219, 219);
   height: 2px;

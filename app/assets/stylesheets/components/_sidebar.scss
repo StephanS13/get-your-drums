@@ -48,6 +48,7 @@ p {
     display: flex;
     width: 100%;
     align-items: stretch;
+    margin-left: 2%;
 }
 
 #sidebar {
@@ -126,12 +127,12 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #7386D5;
+    color: #7a7a7a;
 }
 
-a.article,
-a.article:hover {
-    background: #6d7fcc !important;
+a.back-button,
+a.back-button:hover {
+    background: #7a7a7a !important;
     color: #fff !important;
 }
 

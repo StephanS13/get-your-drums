@@ -1,4 +1,4 @@
 class SamplerController < ApplicationController
-  def show
+  def index
   end
 end

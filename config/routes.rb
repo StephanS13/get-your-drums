@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'sampler/show'
+  # get 'sampler/show', :path => '/sampler'
   get 'products/index'
   get 'products/show'
   get 'accounts/show'
-  get 'pages/home'
+  get '/home', to: "pages#home"
   get 'products/producers'
   get 'products/machines'
   get 'products/instruments'
@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   end
 
   resources :products, only: [:index, :show]
+  resources :sampler, only: [:index], :path => '/sampler'
 
   root to: "pages#home"
 end

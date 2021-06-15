@@ -30,11 +30,11 @@
         <%= link_to "Other Kits", products_other_kits_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item ml-3 mb-2">
-        <%= link_to sampler_show_path do %>
+        <%= link_to sampler_index_path do %>
           <%= cl_image_tag("https://res.cloudinary.com/dehuad3aa/image/upload/v1623138044/get-your-drums/mpc.png",
       width: 80, height: 60, crop: :fill) %>
         <% end %>
-        <!-- <%= link_to '""', pages_home_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
+        <!-- <%= link_to '""', home_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li> -->
 
       <!--DROPDOWN-->
@@ -84,6 +84,6 @@
 <!-- LOGO BAR -->
 <nav id="logo" class="navbar-logo navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center align-items-baseline pt-0">
   <ul class="navbar-nav">
-    <%= link_to "Beatmakers.com", pages_home_path, class:"logo", style:"font-family: Pacifico; font-size: 25px;" %>
+    <%= link_to "Beatmakers.com", home_path, class:"logo", style:"font-family: Pacifico; font-size: 25px;" %>
   </ul>
 </nav>
