@@ -16,3 +16,5 @@ ActiveStorage.start()
 
 // Internal imports
 import '../components/carousel.js';
+import 'app/assets/javascript/sampler.js'
+

@@ -30,10 +30,6 @@ class ProductsController < ApplicationController
     @category = ["Other kits"]
   end
 
-  def sampler
-    @product
-  end
-
   private
 
   def product_params

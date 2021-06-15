@@ -2,7 +2,52 @@
   <div class="row">
     <%= render "shared/sidebar" %>
     <main role="main" class="col-md-4 ml-sm-auto col-lg-8 px-4 mt-4">
-      
+      <template lang='pug'>
+        <script src="sampler.js">
+        .container
+          .sampler
+            .strap.one
+            .strap.two
+            .top-plate
+            .on-button
+            .detail-strip
+              .strip-one
+              .strip-two
+              .strip-three
+              .strip-four
+            .screen
+              | <span class='screen-info'></span>
+            #slider
+            //- .strip-five
+            .bank-one.active
+            .bank-two
+            .pad-container
+              .pad#one
+                |Q
+              .pad#two
+                |W
+              .pad#three
+                |E
+              .pad#four
+                |A
+              .pad#five
+                |S
+              .pad#six
+                |D
+              .pad#seven
+                |Z
+              .pad#eight
+                |X
+              .pad#nine
+                |C
+            .bottom-plate
+        </script>
+      </template>
+    </main>
+  </div>
+</div>    
+    
+      <!--
       <div class="MPC">
         <div class="d-flex">
           <%= cl_image_tag("https://res.cloudinary.com/dehuad3aa/image/upload/v1623220411/get-your-drums/mpc2.png",
@@ -63,7 +108,5 @@
           </div>
         </div>
 		  </div>		
-    </main>
-  </div>
-</div>
+
 
