@@ -6,9 +6,21 @@
   box-shadow: 10px 11px 10px rgb(153, 153, 153);
 }
 
+.description {
+  text-decoration: none !important;
+  color: $red !important;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.item {
+  position:relative;
+  z-index:1;
+}
+
 .stacked--left {
   transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
     &:before,
     &:after {
         transform-origin: right center;
@@ -23,7 +35,7 @@
     }
     
     &:hover {
-        transform: translate(-15px, 0);
+        transform: translate(-16px, 0);
         
         &:before { transform: translate(5px, 0) scale(0.95); }
         &:after { transform: translate(10px, 0) scale(0.90); }
