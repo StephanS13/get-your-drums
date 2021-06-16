@@ -1,107 +1,64 @@
-<main role="main" class="col-md-4 ml-sm-auto col-lg-8 px-4 mt-4">
-  <template lang='pug'>
-    <script src="sampler.js">
-    .container
-      .sampler
-        .strap.one
-        .strap.two
-        .top-plate
-        .on-button
-        .detail-strip
-          .strip-one
-          .strip-two
-          .strip-three
-          .strip-four
-        .screen
-          | <span class='screen-info'></span>
-        #slider
-        //- .strip-five
-        .bank-one.active
-        .bank-two
-        .pad-container
-          .pad#one
-            |Q
-          .pad#two
-            |W
-          .pad#three
-            |E
-          .pad#four
-            |A
-          .pad#five
-            |S
-          .pad#six
-            |D
-          .pad#seven
-            |Z
-          .pad#eight
-            |X
-          .pad#nine
-            |C
-        .bottom-plate
-    </script>
-  </template>
-</main>
+<div class="container">
+  <div class="frame">
+    <div class="screen-wrapper"></div>
+    <div class="brand-wrapper">
+      <div class="brand">SAMPLER</div>
+      <div class="brand2">Beatmakers.com</div>
+    </div>
+    <div class="pads-wrapper">
+      <div class="pad1">
+        <audio id="audio"><source src="sound.wav" type="audio/wav"></audio>
+        <div class= "pad-sound" onclick="document.getElementById('audio').play()"> Pad-1 **********<audio><source src="sound.wav" type="audio/wav"></audio></div>
+      </div>
 
-<!--
-<div class="MPC">
-  <div class="d-flex">
-    <%= cl_image_tag("https://res.cloudinary.com/dehuad3aa/image/upload/v1623220411/get-your-drums/mpc2.png",
-width: 530, height: 400, crop: :fill) %> 
-    <div class="pad-1">
-      <audio preload="auto" id="sound1">
-        <source src="https://res.cloudinary.com/dehuad3aa/video/upload/v1623230880/get-your-drums/sound.wav" type="audio/wav">
-      </audio>
-      <button type="button" class="btn btn-m btn-block" onclick="document.getElementById('sound1').play()">Kick_1</button>
+      <div class="pad2">
+        <audio id="audio"><source src="sound.wav" type="audio/wav"></audio>
+        <div class= "pad-sound" onclick="document.getElementById('audio').play()"> Pad-2 **********<audio><source src="sound.wav" type="audio/wav"></audio></div>
+      </div>
+
+      <div class="pad3">
+        <audio id="audio"><source src="sound.wav" type="audio/wav"></audio>
+        <div class= "pad-sound" onclick="document.getElementById('audio').play()"> Pad-3 **********<audio><source src="sound.wav" type="audio/wav"></audio></div>
+      </div>
+
+      <div class="pad4">
+        <audio id="audio"><source src="sound.wav" type="audio/wav"></audio>
+        <div class= "pad-sound" onclick="document.getElementById('audio').play()"> Pad-4 **********<audio><source src="sound.wav" type="audio/wav"></audio></div>
+      </div>
+
+      <div class="pad5">
+        <audio id="audio"><source src="sound.wav" type="audio/wav"></audio>
+        <div class= "pad-sound" onclick="document.getElementById('audio').play()"> Pad-5 **********<audio><source src="sound.wav" type="audio/wav"></audio></div>
+      </div>
+
+      <div class="pad6">
+        <audio id="audio"><source src="sound.wav" type="audio/wav"></audio>
+        <div class= "pad-sound" onclick="document.getElementById('audio').play()"> Pad-6 **********<audio><source src="sound.wav" type="audio/wav"></audio></div>
+      </div>
+
+      <div class="pad7">
+        <audio id="audio"><source src="sound.wav" type="audio/wav"></audio>
+        <div class= "pad-sound" onclick="document.getElementById('audio').play()"> Pad-7 **********<audio><source src="sound.wav" type="audio/wav"></audio></div>
+      </div>
+
+      <div class="pad8">
+        <audio id="audio"><source src="sound.wav" type="audio/wav"></audio>
+        <div class= "pad-sound" onclick="document.getElementById('audio').play()"> Pad-8 **********<audio><source src="sound.wav" type="audio/wav"></audio></div>
+      </div>
+
+      <div class="pad9">
+        <audio id="audio"><source src="sound.wav" type="audio/wav"></audio>
+        <div class= "pad-sound" onclick="document.getElementById('audio').play()"> Pad-9 **********<audio><source src="sound.wav" type="audio/wav"></audio></div>
+      </div>
     </div>
-    <div class="pad-2">
-      <audio preload="auto" id="sound1">
-        <source src="https://res.cloudinary.com/dehuad3aa/video/upload/v1623230880/get-your-drums/sound.wav" type="audio/wav">
-      </audio>
-      <button type="button" class="btn btn-m btn-block" onclick="document.getElementById('sound1').play()">Kick_2</button>
-    </div>
-    <div class="pad-3">
-      <audio preload="auto" id="sound1">
-        <source src="https://res.cloudinary.com/dehuad3aa/video/upload/v1623230880/get-your-drums/sound.wav" type="audio/wav">
-      </audio>
-      <button type="button" class="btn btn-m btn-block" onclick="document.getElementById('sound1').play()">Kick_3</button>
-    </div>
-    <div class="pad-4">
-      <audio preload="auto" id="sound1">
-        <source src="https://res.cloudinary.com/dehuad3aa/video/upload/v1623230880/get-your-drums/sound.wav" type="audio/wav">
-      </audio>
-      <button type="button" class="btn btn-m btn-block" onclick="document.getElementById('sound1').play()">hat_1</button>
-    </div>
-    <div class="pad-5">
-      <audio preload="auto" id="sound1">
-        <source src="https://res.cloudinary.com/dehuad3aa/video/upload/v1623230880/get-your-drums/sound.wav" type="audio/wav">
-      </audio>
-      <button type="button" class="btn btn-m btn-block" onclick="document.getElementById('sound1').play()">hat_2</button>
-    </div>
-    <div class="pad-6">
-      <audio preload="auto" id="sound1">
-        <source src="https://res.cloudinary.com/dehuad3aa/video/upload/v1623230880/get-your-drums/sound.wav" type="audio/wav">
-      </audio>
-      <button type="button" class="btn btn-m btn-block" onclick="document.getElementById('sound1').play()">hat_3</button>
-    </div>
-    <div class="pad-7">
-      <audio preload="auto" id="sound1">
-        <source src="https://res.cloudinary.com/dehuad3aa/video/upload/v1623230880/get-your-drums/sound.wav" type="audio/wav">
-      </audio>
-      <button type="button" class="btn btn-m btn-block" onclick="document.getElementById('sound1').play()">snare_1</button>
-    </div>
-    <div class="pad-8">
-      <audio preload="auto" id="sound1">
-        <source src="https://res.cloudinary.com/dehuad3aa/video/upload/v1623230880/get-your-drums/sound.wav" type="audio/wav">
-      </audio>
-      <button type="button" class="btn btn-m btn-block" onclick="document.getElementById('sound1').play()">snare_2</button>
-    </div>
-    <div class="pad-9">
-      <audio preload="auto" id="sound1">
-        <source src="https://res.cloudinary.com/dehuad3aa/video/upload/v1623230880/get-your-drums/sound.wav" type="audio/wav">
-      </audio>
-      <button type="button" class="btn btn-m btn-block" onclick="document.getElementById('sound1').play()">snare_3</button>
+    <div class="scroller"></div>
+    <div class="buttons-wrapper">
+      <div class="rec">
+        <div class="rec-button"></div>
+      </div>
+      <div class="play">
+        <div class="play-button"></div>
+      </div>
     </div>
   </div>
-</div>		
-
-
+</div>
