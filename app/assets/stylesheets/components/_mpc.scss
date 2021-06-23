@@ -1,6 +1,6 @@
 .mpc-wrapper{
   margin-top: 2%;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 
@@ -10,14 +10,15 @@
   border: rgb(184, 184, 184) solid 2px;
   background-color: rgb(206, 206, 206);
   // z-index: -2;
-  width: 49%;
-  height: 378px;
+  width: 90%;
+  height: 90%;
   border-radius: 11px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 23px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 .screen-wrapper {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
   border: black solid 5px;
   background-color: rgb(29, 48, 35);
@@ -135,8 +136,8 @@
   border: black solid 3px;
   border-radius: 50%;
   background-color: gray;
-  width: 17%;
-  height: 79px;
+  width: 5rem;
+  height: 5rem;
   top: 160px;
   left: 318px;
 }
@@ -145,8 +146,8 @@
   border: black solid 3px;
   border-radius: 50%;
   background-color: black;
-  width: 23%;
-  height: 17px;
+  width: 1rem;
+  height: 1rem;
   bottom: 39px;
   left: 44px;
 }
@@ -168,8 +169,8 @@
   border-radius: 5px;
   background-color: white;
   width: 13%;
-  height: 63px;
-  top: 285px;
+  height: 14%;
+  top: 293px;
   left: 291px;
 }
 .rec-button {
@@ -180,7 +181,7 @@
   border-radius: 50%;
   width: 44%;
   height: 23px;
-  top: 22px;
+  top: 14px;
   left: 14px;
 }
 .play {
@@ -189,8 +190,8 @@
   border-radius: 5px;
   background-color: white;
   width: 13%;
-  height: 63px;
-  top: 285px;
+  height: 14%;
+  top: 293px;
   left: 370px;
 }
 .play-button {
@@ -202,6 +203,6 @@
   border-top: 13px solid transparent;
   border-bottom: 12px solid transparent;
   border-left: 21px solid black;
-  top: 19px;
+  top: 14px;
   left: 18px;
 }

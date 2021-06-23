@@ -1,19 +1,14 @@
-<h1>PRODUCTS</h1>
+<div class="producers-wrapper">
+  <div class="banner img-fluid container" style="max-width: 100%; height: auto;">
+  <h1 class="producers-title mb-5">All drum kits</h1>
 
-<div>
-  <% @products.each do |product| %>
-    <div class="card-product-inline m-4">
-      <%= cl_image_tag product.photo.key, width: 350, height: 310, crop: :fill %>
-      <div class="card-product-inline-infos p-3">
-        <h2> <%= product.name %> </h2>
-        <h6> <span class="text-product-inline"> <%= product.description %> </span></h6>
-          <div class="d-flex justify-content-end mt-3">
-          <%= link_to product_path(product), class: "btn btn-primary" do %>
-            $<%= product.price %>
-          <% end %>
-          </div>
-        </div>
+    <div class="card-product">
+      <%= render 'shared/card_product' %>
+      <div class="bg">
+        <img src="https://res.cloudinary.com/dehuad3aa/image/upload/v1623038601/get-your-drums/jd.jpg" />
+        <img src="https://res.cloudinary.com/dehuad3aa/image/upload/v1623038601/get-your-drums/dre.jpg" />
+        <img src="https://res.cloudinary.com/dehuad3aa/image/upload/v1623038609/get-your-drums/primo.jpg" />
       </div>
     </div>
-  <% end %>
+  </div>
 </div>

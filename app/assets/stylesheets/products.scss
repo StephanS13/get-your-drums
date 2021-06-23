@@ -1,59 +1,56 @@
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.producers-wrapper {
+  // width:100%;
+  // height:100%;
+  // position:relative;
+}
 
-.product-show {
+.producers-title {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 700;
+  padding-top: 20px;
+  position:relative;
+  z-index: 1;
+}
 
-  .card-product-show {
-    border: solid 1px #e5e5e5;
-    border-radius: 10px;
-  }
-  
-  .product-show-title {
-    line-height: 14px;
-  
-  }
-  
-  
-  .btn-create-rental-request {
-    color: white;
-    padding: 6px 12px;
-    border-radius: 4px;
-    background-color:#ff8e71;
-    transition: background 0.3s ease;
-  }
-  
-  .btn-create-rental-request:hover {
-    background: #ff8e71;
-    color: white;
-  }
-  
-  .top-infos-show-card {
-    background-color: white;
-    padding: 8px 8px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-  
-  @media (min-width: 576px) {
-    .homepage .cards {
-      grid-template-columns: 1fr;
-        .card{
-          width: 50vw;
-      }
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .homepage .cards {
-      grid-template-columns: 1fr 1fr;
-        .card{
-          width: 30vw;
-      }
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .homepage .cards {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
+.producers-title::after {
+  content: '';
+  background: rgb(219, 219, 219);
+  height: 2px;
+  // margin: 0 auto;
+  left: 0;
+  right: 70%;
+  top: 72px;
+  position:absolute;
+  z-index: 1;
+}
+
+.bg {
+  position:absolute;
+  top:0;
+  left:200px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, white -0.45%, rgba(255, 255, 255, 0) 67.73%);
+}
+
+.bg img {
+  position:absolute;
+  object-fit: cover;
+  top:0;
+  left:0;
+  // max-width:100%;
+  // max-height:100%;
+  width:100%;
+  height:100%;
+  opacity:0;
+  transition:all .3s ease;
+  z-index: -1;
+}
+
+.bg img:nth-child(0),
+.item:nth-child(1):hover ~ .bg img:nth-child(1),
+.item:nth-child(2):hover ~ .bg img:nth-child(2),
+.item:nth-child(3):hover ~ .bg img:nth-child(3) {
+  opacity:1;
 }

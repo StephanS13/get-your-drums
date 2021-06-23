@@ -14,7 +14,7 @@ Product.destroy_all
 
 puts "creates users"
 
-stephan = User.new(first_name: "Stephane", last_name: "Simcic", email:"stephan@test.com", password:"dadada")
+stephan = User.new(first_name: "Stephane", last_name: "Simcic", email:"stephan@test.com", password:"dadadada")
 # file = File.open(Rails.root.join('db/seeds/images/users/steph.jpg'))
 # steph.avatar.attach(io: file, filename: 'steph.jpg', content_type: 'image/jpg')
 # steph.save!

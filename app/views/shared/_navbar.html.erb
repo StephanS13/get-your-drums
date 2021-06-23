@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div>
-    <a><img class="icon navbar-brand p-0" style="color: red" href="/" src="https://res.cloudinary.com/dehuad3aa/image/upload/v1623223892/get-your-drums/icon.png" height="80">
+    <a><img class="icon navbar-brand p-0" style="color: red" href="/" src="https://res.cloudinary.com/dehuad3aa/image/upload/v1624437059/get-your-drums/logo-new2.png">
     <%# <div class="speaker small flex-center circle1">
       <div class="ring small flex-center">
         <div class="b">B</div> %>
-    </div></a>
+    </a>
   </div>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,7 +12,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto mt-3">
+    <ul class="item-list navbar-nav mr-auto pt-3">
       <li class="nav-item">
         <%= link_to "All Drum Kits", products_index_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li>
@@ -29,11 +29,12 @@
       <li class="nav-item">
         <%= link_to "Other Kits", products_other_kits_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item ml-3 mb-2">
+      <li class="nav-item ml-3 mb-2 mpc-icon">
         <%= link_to sampler_index_path do %>
           <%= cl_image_tag("https://res.cloudinary.com/dehuad3aa/image/upload/v1623138044/get-your-drums/mpc.png",
       width: 80, height: 60, crop: :fill) %>
         <% end %>
+      </li>
         <!-- <%= link_to '""', home_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li> -->
 
@@ -54,11 +55,17 @@
     <div class="login">
       <ul class="navbar-nav mr-auto">
         <% if user_signed_in? %>
+          
+            <li class="nav-item active">
+            <div class="">
+              <%= link_to orders_path do %>
+                <i class="fas fa-shopping-cart"></i>
+              <% end %>
+            </div> 
+            </li>
+                  
           <li class="nav-item active">
             <%= link_to "My Account", accounts_show_path, class: "nav-link mr-2" %><span class="sr-only">(current)</span>
-          </li>
-          <li>
-            <%# <i class="fas fa-circle mr-3 p-0"></i> %>
           </li>
           <li class="nav-item active">
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link btn btn-secondary" %>
