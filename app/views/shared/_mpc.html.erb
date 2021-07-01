@@ -1,6 +1,9 @@
 <div class="container mpc-wrapper">
   <div class="frame">
-    <div class="screen-wrapper"></div>
+    <div class="screen-wrapper">
+      <p class="screen-name"><%= @products.first.name %></p>
+      <p class="screen-content"><%= @products.first.content %></p>
+    </div>
     <div class="brand-wrapper">
       <div class="brand">SAMPLER</div>
       <div class="brand2">Beatmakers.com</div>
@@ -47,10 +50,10 @@
     </div>
     <div class="buttons-wrapper">
       <div class="rec">
-        <div class="rec-button"></div>
+        <div class="rec-symbol"></div>
       </div>
       <div class="play">
-        <div class="play-button"></div>
+        <div class="play-symbol"></div>
       </div>
     </div>
   </div>

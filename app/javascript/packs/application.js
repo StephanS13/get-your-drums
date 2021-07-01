@@ -15,7 +15,4 @@ Turbolinks.start()
 ActiveStorage.start()
 
 // Internal imports
-import '../components/carousel.js';
-import 'packs/sampler.js'
-require("packs/mpc")
-
+import './main.js'
