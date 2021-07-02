@@ -1,3 +1,18 @@
+.navbar {
+  align-items: center;
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
 .icon {
   width: 60px;
   border-radius: 50%;
@@ -7,6 +22,7 @@
   margin-top: -1%;
 }
 
+//LOGO
 #logo {
   height: 39px;
   margin-top: -40px;
@@ -15,7 +31,6 @@
   top: 0px;
   z-index: 10;
 }
-
 .logo {
   padding-top: 5px;
   padding-bottom: 2px;
@@ -23,13 +38,13 @@
   color: #EE3737;
   font-weight: 600;
 }
-
 .logo:hover {
   text-decoration: none;
   color: #EE3737;
   text-shadow: 2px 2px 4px #2e2e2e;
-  }
+}
 
+//CART
 .red-circle {
   display: flex;
   justify-content:space-evenly;
@@ -54,6 +69,10 @@
 .login {
   margin-right: 1.5%;
 }
+
+
+
+
 
 // SPEAKER
 .flex-center{
