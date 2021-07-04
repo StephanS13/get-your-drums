@@ -1,0 +1,11 @@
+<% @producers.each do |producer| %>
+
+  <ul class="collapse list-unstyled" id="homeSubmenu1">
+    <li class="producer-list">
+      <%= link_to sampler_path(producer) do %>
+        <%= producer.name %>
+      <% end %>
+    </li>
+  </ul>
+
+<% end %>

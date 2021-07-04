@@ -18,10 +18,10 @@ const mpcPad9 = document.getElementById("pad9");
 
 // connect
 selector.addEventListener("click", (event) => {
-  mpcName.change(product.name);
-  mpcContent.change(product.content);
-  mpcPad1.change(product.sound1);
-  mpcPad2.change(product.sound2);
+  event.currentTarget.mpcName.change(product.name);
+  event.currentTarget.mpcContent.change(product.content);
+  event.currentTarget.mpcPad1.change(product.sound1);
+  event.currentTarget.mpcPad2.change(product.sound2);
   
 });
 

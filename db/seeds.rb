@@ -23,7 +23,7 @@ puts "users created"
 
 puts "creates products"
 
-dilla = Product.new(category: "drums",
+dilla = Product.new(category: "producers",
                       name: "J Dilla | Dilla Dog kit",
                       price: 19.90,
                       content:  "119 sounds",
@@ -38,7 +38,7 @@ file = File.open(Rails.root.join('db/seeds/images/products/jd.jpg'))
 dilla.photo.attach(io: file, filename: 'jd.jpg', content_type: 'image/jpg')
 dilla.save!
 
-dre = Product.new(category: "drums",
+dre = Product.new(category: "producers",
                       name: "Dr. Dre | The Chronic kit",
                       price: 24.90,
                       content:  "125 sounds",
@@ -53,7 +53,7 @@ file = File.open(Rails.root.join('db/seeds/images/products/dre.jpg'))
 dre.photo.attach(io: file, filename: 'dre.jpg', content_type: 'image/jpg')
 dre.save!
 
-primo = Product.new(category: "drums",
+primo = Product.new(category: "producers",
                       name: "DJ Premier | Full Clip kit",
                       price: 24.90,
                       content:  "209 sounds",

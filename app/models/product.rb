@@ -3,4 +3,5 @@ class Product < ApplicationRecord
   # belongs_to :owner, class_name: "User"
   has_one_attached :photo
   has_one_attached :audio
+  # has_many :samplers, foreign_key: :sampler_id
 end

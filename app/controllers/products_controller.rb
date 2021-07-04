@@ -3,7 +3,8 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
-    @categories = ["Producers kits", "Machines kits", "Instruments", "Other kits"]
+    @categories = ["Producers kits", "Machines kits", "Instruments", "Other kits", "Drums"]
+    @producers = @products.where(category: "producers")
   end
 
   def show
@@ -13,22 +14,22 @@ class ProductsController < ApplicationController
 
   def producers
     @products = Product.all
-    @category = ["Producers"]
+    @producers = @products.where(category: "producers")
   end
 
   def machines
     @products = Product.all
-    @category = ["Instruments"]
+    @machines = @products.where(category: "machines")
   end
 
   def instruments
     @products = Product.all
-    @category = ["Instruments"]
+    @instruments = @products.where(category: "instruments")
   end
 
   def other_kits
     @products = Product.all
-    @category = ["Other kits"]
+    @other_kits = @products.where(category: "other_kits")
   end
 
   private
