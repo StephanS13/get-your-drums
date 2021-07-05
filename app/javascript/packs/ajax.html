@@ -1,0 +1,36 @@
+<!-- FOR AUDIO ONLCICK -->
+<script>
+  var pad1 = document.getElementById("audio"); // get the canvas
+  pad1.addEventListener("click",playSound);   // call playSound when clicked
+  // See below for the function playSound
+
+  var sound = new Audio();         // create the audio
+  sound.src = "Sound.wav";  // set the resource location 
+  sound.oncanplaythrough = function(){   // When the sound has completely loaded
+      sound.readyToRock = true;    // flag sound is ready to play
+                                  // I just made it up and can be anything
+  };
+  sound.onerror = function(){      // not required but if there are problems this will help debug the problem
+      console.log("Sound file SoundFileURL.mp3 failed to load.")
+  };
+
+  function playSound(){
+    if(sound && sound.readyToRock){  // check for the sound and if it has loaded
+        sound.currentTime = 0;       // seek to the start
+        sound.play();                // play it till it ends
+    }
+}
+</script>
+
+
+<!-- MY TRY -->
+<!-- <script>
+  document.getElementById('button').addEventListener('click', onPlay);
+
+    function onPlay() {
+      // Create sound Object
+      var sound = document.getElementById("myAudio").play();
+      // play sound
+    };
+</script> -->
+  

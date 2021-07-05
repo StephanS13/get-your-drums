@@ -17,3 +17,4 @@ ActiveStorage.start()
 // Internal imports
 import './main.js';
 import './mpc.js';
+import "controllers"
