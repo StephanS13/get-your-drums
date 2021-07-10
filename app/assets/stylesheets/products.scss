@@ -1,24 +1,29 @@
-.producers-title {
+.products-title {
   font-family: 'Roboto';
   font-size: 32px;
   font-weight: 700;
-  padding-top: 20px;
+  margin-top: 0px;
+  padding-top: 4%;
   position:relative;
   z-index: 1;
 }
-
-.producers-title::after {
+.products-title::after {
   content: '';
   background: rgb(219, 219, 219);
   height: 2px;
   // margin: 0 auto;
   left: 0;
   right: 70%;
-  top: 72px;
+  top: 6rem;
   position:absolute;
   z-index: 1;
 }
 
+.card-product {
+  margin-top: 5%;
+}
+
+//BACKGROUND IMAGE HOVER
 .bg {
   position:absolute;
   top:0;
@@ -28,7 +33,7 @@
   background-image: linear-gradient(to right, white -0.45%, rgba(255, 255, 255, 0) 67.73%);
 }
 
-.bg img {
+.img {
   position:absolute;
   object-fit: cover;
   top:0;

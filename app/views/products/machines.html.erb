@@ -1,13 +1,13 @@
-<div class="machines-wrapper">
+<div class="products-wrapper">
   <div class="banner img-fluid container" style="max-width: 100%; height: auto;">
-  <h1 class="machines-title mb-5">Machines kits</h1>
+  <h1 class="products-title mb-5">MACHINES KITS</h1>
 
     <div class="card-product">
       <%= render 'shared/card_product' %>
       <div class="bg">
-        <img src="https://res.cloudinary.com/stephan/image/upload/v1622784050/get-your-drums/jd.jpg" />
-        <img src="https://res.cloudinary.com/stephan/image/upload/v1623038601/get-your-drums/dre.jpg" />
-        <img src="https://res.cloudinary.com/stephan/image/upload/v1623038609/get-your-drums/primo.jpg" />
+        <% @products.each do |product| %>
+          <%= cl_image_tag product.photo.key, crop: :fill, class:'img' %>
+        <% end %>
       </div>
     </div>
   </div>

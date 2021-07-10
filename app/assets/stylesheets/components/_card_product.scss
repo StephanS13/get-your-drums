@@ -1,11 +1,16 @@
-.price {
-  margin-top: 30px;
-}
-
 .card {
   box-shadow: 10px 11px 10px rgb(153, 153, 153);
 }
 
+.price-title {
+  display: flex;
+  justify-content: space-between;
+}
+.price-span {
+  position: absolute;
+  right: 1.3rem;
+  color: green;
+}
 
 .description {
   text-decoration: none !important;
@@ -19,6 +24,11 @@
   z-index:1;
 }
 
+.add-to-cart {
+  margin-top: 30px;
+}
+
+// SLIDE EFFECT
 .stacked--left {
   transition-timing-function: ease-in-out;
   transition-duration: 0.4s;

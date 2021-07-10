@@ -3,7 +3,9 @@
   <div class="hero-text">
     <h1>STEP YOUR GAME UP</h1>
     <br>
-    <button class="btn btn-danger">Click to Explore</button>
+    <%= link_to products_index_path do %>
+      <button class="btn btn-danger">Click to Explore</button>
+    <% end %>
   </div>
 </div>
 
@@ -31,6 +33,7 @@
 </div>
 
 <!--CAROUSEL-->
+<h1 class="latest-kits container text-center mt-5">OUR LATEST KITS</h1>
 <div class="carousel mt-3">
   <%= render "shared/carousel" %>
 </div>

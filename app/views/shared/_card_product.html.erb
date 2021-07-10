@@ -12,16 +12,16 @@
           <div class="card-body">
             <h5 class="card-title">
             <%= link_to product_path(product) do %>
-              <%= product.name %></h5>
-            <% end %>
+              <%= product.name %><span class="price-span">$<%= product.price %>0</span>
+            <% end %></h5>
             <p class="card-text description mt-3">
             <%= link_to product_path(product) do %>
               <%= product.content %></p>
             <% end %>
-            <div class="price d-flex justify-content-between">
+            <div class="add-to-cart d-flex justify-content-between">
               <p class="card-text" style="color:red; font-weight:600"><%= link_to product_path(product), class: "btn btn-outline-danger" do %>Try Now!</p><% end %></small></p>
-              <p class="card-text text-right"><small class="text-muted"><%= link_to product_path(product), class: "btn btn-success" do %>
-                $<%= product.price %>
+              <p><small class="text-muted"><%= link_to product_path(product), class: "btn btn-success" do %>
+                Add to cart
               <% end %></small></p>
             </div>
           </div>
