@@ -16,28 +16,31 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="item-list navbar-nav mr-auto pt-3">
-      <li class="nav-item">
+      <li class="item-title nav-item">
         <%= link_to "All Drum Kits", products_index_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="item-title nav-item">
         <%= link_to "Producers", products_producers_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="item-title nav-item">
         <%= link_to "Machines", products_machines_path, class: "nav-link" %>
         <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="item-title nav-item">
         <%= link_to "Instruments", products_instruments_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="item-title nav-item">
         <%= link_to "Other Kits", products_other_kits_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item ml-3 mb-2 mpc-icon">
-        <%= link_to sampler_index_path do %>
-          <%= cl_image_tag("https://res.cloudinary.com/stephan/image/upload/v1623138044/get-your-drums/mpc.png",
-      width: 80, height: 60, crop: :fill) %>
-        <% end %>
-      </li>
+      <ul class="mpc-ul">
+        <li class="nav-item mb-2 mpc-icon">
+          <%= link_to sampler_index_path do %>
+            <%= cl_image_tag("https://res.cloudinary.com/stephan/image/upload/v1623138044/get-your-drums/mpc.png",
+        width: 80, height: 60, crop: :fill) %>
+          <% end %>
+        </li>
+      </ul>
+      
         <!-- <%= link_to '""', home_path, class: "nav-link" %><span class="sr-only">(current)</span></a>
       </li> -->
 

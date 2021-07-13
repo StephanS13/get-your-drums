@@ -13,13 +13,39 @@
   border: none;
 }
 
+.item-list {
+  position:relative;
+  left: 19%;
+  margin-bottom: -6.6%;
+}
+.item-title {
+  position:relative;
+}
+.item-title:hover::after {
+  content: '';
+    background: $red;
+    height: 4px;
+    margin: 0 auto;
+    left: 7px;
+    right: 6%;
+    top: 2.25rem;
+    position: absolute;
+    z-index: 1;
+}
 .icon {
   width: 60px;
   border-radius: 50%;
 }
 
+.mpc-ul {
+  text-decoration: none;
+  position: relative;
+  bottom: 39px;
+  left: 26%;
+}
 .mpc-icon {
-  margin-top: -1%;
+  position: relative;
+  
 }
 
 //LOGO
