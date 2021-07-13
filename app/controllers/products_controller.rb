@@ -3,13 +3,22 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
-    @categories = ["Producers kits", "Machines kits", "Instruments", "Other kits", "Drums"]
+    # @product = Product.find(params[:id])
+    # @categories = ["Producers kits", "Machines kits", "Instruments", "Other kits", "Drums"]
     @producers = @products.where(category: "producers")
+    @producers = @products.where(category: "producers")
+    @machines = @products.where(category: "machines")
+    @instruments = @products.where(category: "instruments")
+    @other_kits = @products.where(category: "other kits")
   end
 
   def show
     @products = Product.all
     @product = Product.find(params[:id])
+    @producers = @products.where(category: "producers")
+    @machines = @products.where(category: "machines")
+    @instruments = @products.where(category: "instruments")
+    @other_kits = @products.where(category: "other kits")
   end
 
   def producers

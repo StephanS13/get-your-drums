@@ -2,10 +2,12 @@
 
   <ul class="collapse list-unstyled" id="homeSubmenu1">
     <li class="producer-list">
-      <%= link_to sampler_path(producer) do %>
+      <%= link_to sampler_path(producer), id:"clicker" do %>
         <%= producer.name %>
       <% end %>
     </li>
   </ul>
 
 <% end %>
+
+<script>$("#clicker").load("app/views/sampler/show.html.erb #mydiv");</script>
