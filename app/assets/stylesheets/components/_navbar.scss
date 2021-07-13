@@ -33,14 +33,14 @@
 }
 .item-title:hover::after {
   content: '';
-    background: $red;
-    height: 4px;
-    margin: 0 auto;
-    left: 7px;
-    right: 6%;
-    top: 2.25rem;
-    position: absolute;
-    z-index: 1;
+  background: $red;
+  height: 4px;
+  margin: 0 auto;
+  left: 7px;
+  right: 6%;
+  top: 2.25rem;
+  position: absolute;
+  z-index: 1;
 }
 
 // MPC
@@ -48,7 +48,7 @@
   text-decoration: none;
   position: relative;
   bottom: 39px;
-  left: 13%;
+  left: -124%;
 }
 
 //LOGO
@@ -64,12 +64,12 @@
   padding-top: 5px;
   padding-bottom: 2px;
   margin-top: -7px;
-  color: #EE3737;
+  color: $red;
   font-weight: 600;
 }
 .logo:hover {
   text-decoration: none;
-  color: #EE3737;
+  color: $red;
   text-shadow: 2px 2px 4px #2e2e2e;
 }
 
