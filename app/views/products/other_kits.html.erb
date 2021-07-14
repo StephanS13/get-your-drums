@@ -1,4 +1,4 @@
-<div class="carousel-inner d-flex">
+<div class="carousel-inner d-flex ml-5">
   <% @products.each do |product| %>
 
     <div class="carousel-item active">
@@ -21,6 +21,15 @@
 
   <% end %>
 </div>
+
+
+<div class="pad1">
+  <div class= "pad-sound" onclick="document.getElementById('audio').play()"> Pad-1 **********<audio id="audio"><source src="<%= @products.second.audio.key %>" type="audio/wav"></audio></div>
+</div>
+
+
+<!--
+<button><%= @products.second.audio %></button>
 
 
 <button id="clicker" >Other kits</button>

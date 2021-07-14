@@ -34,10 +34,14 @@
       </li>
       <ul class="mpc-ul">
         <li class="nav-item mb-2 mpc-icon">
-          <%= link_to sampler_index_path do %>
-            <%= cl_image_tag("https://res.cloudinary.com/stephan/image/upload/v1623138044/get-your-drums/mpc.png",
-        width: 80, height: 60, crop: :fill) %>
-          <% end %>
+          <div class="mpc-text">Try Now!</div>
+          <div>
+            <%= link_to sampler_index_path do %>
+                <%= cl_image_tag("https://res.cloudinary.com/stephan/image/upload/v1623138044/get-your-drums/mpc.png",
+            width: 80, height: 60, crop: :fill) %>
+              <% end %>
+          </div>
+          
         </li>
       </ul>
       

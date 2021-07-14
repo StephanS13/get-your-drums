@@ -38,17 +38,35 @@
   margin: 0 auto;
   left: 7px;
   right: 6%;
-  top: 2.25rem;
+  top: 2.50rem;
   position: absolute;
   z-index: 1;
 }
 
 // MPC
 .mpc-ul {
-  text-decoration: none;
+  width: 157px;
+  border: rgb(207, 207, 207) solid 1px;
+  border-radius: 5px;
+  // text-decoration: none;
   position: relative;
-  bottom: 39px;
-  left: -124%;
+  bottom: 48px;
+  left: -110%;
+  list-style-type: none;
+  padding: 0 !important;
+  padding-inline-start: 0 !important;
+}
+.mpc-icon {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+.mpc-text {
+  color: $red;
+  font-weight: 700;
+  font-family: Roboto;
+  margin-top: 15%;
+  padding-left: 5%;
 }
 
 //LOGO
