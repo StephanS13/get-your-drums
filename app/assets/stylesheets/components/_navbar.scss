@@ -13,17 +13,32 @@
   border: none;
 }
 
-//ICON
-.icon {
-  width: 60px;
-  border-radius: 50%;
+// MPC LOGO
+.mpc-logo {
+  display: flex;
+  width: 177px;
+  border: rgb(207, 207, 207) solid 1px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  // padding-right: 8px;
 }
+.mpc-text {
+  text-align: center;
+  color: $red;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: Roboto;
+  margin: auto;
+  margin-left: -5px;
+  position: relative;
+}
+
 
 //ITEMS
 .item-list {
-  position:relative;
-  left: 22%;
-  margin-bottom: -6.6%;
+  margin: 0 auto;
+  margin-bottom: -67px;
 }
 .item-title {
   position:relative;
@@ -41,32 +56,6 @@
   top: 2.50rem;
   position: absolute;
   z-index: 1;
-}
-
-// MPC
-.mpc-ul {
-  width: 157px;
-  border: rgb(207, 207, 207) solid 1px;
-  border-radius: 5px;
-  // text-decoration: none;
-  position: relative;
-  bottom: 48px;
-  left: -110%;
-  list-style-type: none;
-  padding: 0 !important;
-  padding-inline-start: 0 !important;
-}
-.mpc-icon {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 5px;
-}
-.mpc-text {
-  color: $red;
-  font-weight: 700;
-  font-family: Roboto;
-  margin-top: 15%;
-  padding-left: 5%;
 }
 
 //LOGO

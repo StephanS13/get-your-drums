@@ -18,6 +18,6 @@ class SamplerController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:name, :description, :content, :rating, :tags, :category, :price, :sound_name, :photo)
+    params.require(:product).permit(:name, :description, :content, :rating, :tags, :category, :price, :sound_name, :photo, :audio)
   end
 end

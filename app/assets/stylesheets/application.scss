@@ -7,7 +7,7 @@
 @import "devise";
 // pages
 @import "home";
-@import "accounts";
+@import "account";
 @import "products";
 @import "producers";
 @import "instruments";
@@ -16,8 +16,6 @@
 @import "sampler";
 @import "carts";
 @import "orders";
-// profile
-@import "pages/profile";
 // components
 @import "components/navbar";
 @import "components/footer";

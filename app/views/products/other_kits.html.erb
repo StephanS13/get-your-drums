@@ -1,32 +1,43 @@
-<div class="carousel-inner d-flex ml-5">
-  <% @products.each do |product| %>
+<div class="container">
+<!--
+  <div class="carousel-inner d-flex ml-5">
+    <% @products.each do |product| %>
 
-    <div class="carousel-item active">
-      <div class="row d-flex justify-content-between">
-        <div class="col-md-3">
-          <div class="card t-carousel-card" style="width: 18rem;">
-            <%= cl_image_tag product.photo.key, width: 287, height: 192, crop: :fill, class:"t-image-center" %>
-            <div class="card-body">
-              <a href="#" class="green-button btn btn-success">$<%= product.price %>0</a> 
-              <h5 class="card-title"><%= product.name %></h5>
-              <p class="card-text"><%= product.content %></p>
-              <div class="t-add-to-cart d-flex justify-content-between">
-                <p class="t-card-text" style="color:red; font-weight:600"><%= link_to sampler_path(product), class: "btn btn-outline-danger" do %>Try Now!</p><% end %></small></p>
+      <div class="carousel-item active">
+        <div class="row d-flex justify-content-between">
+          <div class="col-md-3">
+            <div class="card t-carousel-card" style="width: 18rem;">
+              <%= cl_image_tag product.photo.key, width: 287, height: 192, crop: :fill, class:"t-image-center" %>
+              <div class="card-body">
+                <a href="#" class="green-button btn btn-success">$<%= product.price %>0</a> 
+                <h5 class="card-title"><%= product.name %></h5>
+                <p class="card-text"><%= product.content %></p>
+                <div class="t-add-to-cart d-flex justify-content-between">
+                  <p class="t-card-text" style="color:red; font-weight:600"><%= link_to sampler_path(product), class: "btn btn-outline-danger" do %>Try Now!</p><% end %></small></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-  <% end %>
+    <% end %>
+  </div> -->
+
+
+  <div class="pad1">
+    <div class= "pad-sound" onclick="document.getElementById('audio').play()"> <%= @products.first.name %><audio id="audio"><source src="/home/stephan/get-your-drums/public/sound.wav" type="audio/wav"></audio></div>
+  </div>
+
+
+  <%= audio_tag "/home/stephan/get-your-drums/public/sound.wav", class: "audio-play" %>
+  <p class="btn btn-primary audioButton">Play</p>
+
 </div>
-
-
-<div class="pad1">
-  <div class= "pad-sound" onclick="document.getElementById('audio').play()"> Pad-1 **********<audio id="audio"><source src="<%= @products.second.audio.key %>" type="audio/wav"></audio></div>
-</div>
-
+<script>$(".audioButton").on("click", function() {
+  $(".audio-play")[0].currentTime = 0;
+  return $(".audio-play")[0].play();
+});</script>
 
 <!--
 <button><%= @products.second.audio %></button>
