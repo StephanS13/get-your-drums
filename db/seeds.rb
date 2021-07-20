@@ -36,9 +36,14 @@ dilla = Product.new(category: "producers",
                       
 file = File.open(Rails.root.join('db/seeds/images/products/jd.jpg'))
 dilla.photo.attach(io: file, filename: 'jd.jpg', content_type: 'image/jpg')
-dilla.save!
+
 
 dilla.audio.attach(io: File.open(Rails.root.join('/home/stephan/get-your-drums/db/seeds/sounds/sound.wav')), filename: 'sound.wav')
+
+dilla.audio.attach(io: File.open(Rails.root.join('/home/stephan/get-your-drums/db/seeds/sounds/sound2.wav')), filename: 'sound2.wav')
+
+dilla.audio.attach(io: File.open(Rails.root.join('/home/stephan/get-your-drums/db/seeds/sounds/sound3.wav')), filename: 'sound3.wav')
+
 dilla.save!
 
 dre = Product.new(category: "producers",

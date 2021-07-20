@@ -26,7 +26,7 @@
 
 
   <div class="pad1">
-    <div class= "pad-sound" onclick="document.getElementById('audio').play()"> <%= @products.first.name %><audio id="audio"><source src="/home/stephan/get-your-drums/public/sound.wav" type="audio/wav"></audio></div>
+    <div class= "pad-sound" onclick="document.getElementById('audio').play()"> <%= @products.first.name %><audio id="audio"><source src="<% @products.first.audio %>" type="audio/wav"></audio></div>
   </div>
 
 
@@ -34,6 +34,7 @@
   <p class="btn btn-primary audioButton">Play</p>
 
 </div>
+
 <script>$(".audioButton").on("click", function() {
   $(".audio-play")[0].currentTime = 0;
   return $(".audio-play")[0].play();
