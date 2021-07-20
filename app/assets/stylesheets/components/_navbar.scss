@@ -58,6 +58,17 @@
   position: absolute;
   z-index: 1;
 }
+// .item-title:active {
+//   content: '';
+//   background: $red;
+//   height: 4px;
+//   margin: 0 auto;
+//   left: 7px;
+//   right: 6%;
+//   top: 2.74rem;
+//   position: absolute;
+//   z-index: 1;
+// }
 
 //LOGO
 #logo {
@@ -104,12 +115,23 @@
 }
 
 .login {
-  margin-right: 1.5%;
+  margin-right: 0.8%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.login-btn {
+  margin-right: 10px;
+  width: 74px;
+  border: white solid 1px;
+  border-radius: 8%;
+  text-align: center;
 }
 
 
 
 
+// ================================ //
 
 // SPEAKER
 .flex-center{

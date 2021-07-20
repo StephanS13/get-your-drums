@@ -1,7 +1,9 @@
-<h1>Products#show</h1>
-<p>Find me in app/views/products/show.html.erb</p>
-
-<!--<% @products.each do |product|  %>
-  <%= cl_image_tag product.photo.key, width: 180, height: 169, crop: :fill %>
-<% end %> -->
-<%= cl_image_tag @product.photo.key, width: 180, height: 169, crop: :fill %>
+<div class="product-background-image" style="background-image: url (<%= @product.photo.key %>)" >
+  <div class="img-fluid container" style="max-width: 100%; height: auto;">
+    <h1 class="products-title mb-5"><%= @product.name.upcase %></h1>
+  
+    <div class="single-product">
+      <%= render 'shared/single_product' %>          
+    </div>
+  </div>
+</div>

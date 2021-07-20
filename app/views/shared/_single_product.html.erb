@@ -1,0 +1,11 @@
+<div class="single-card">
+  <%= cl_image_tag @product.photo.key, width: 250, height: 169, crop: :fill, class:"image-center" %>
+  <div class="card-body">
+    <h5 class="card-title"><%= @product.name %></h5>
+    <p class="card-text"><%= @product.content %></p>
+    <a href="#" class="btn btn-success">Add to Cart</a>
+  </div>
+</div>
+
+        
+
