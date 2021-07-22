@@ -1,9 +1,31 @@
-<div class="product-background-image" style="background-image: url (<%= @product.photo.key %>)" >
-  <div class="img-fluid container" style="max-width: 100%; height: auto;">
-    <h1 class="products-title mb-5"><%= @product.name.upcase %></h1>
+<div class="products-wrapper">
+  <div class="banner img-fluid container" style="max-width: 100%; height: auto;">
+    <h1 class="products-title mb-5"><%= @product.name %></h1>
   
-    <div class="single-product">
-      <%= render 'shared/single_product' %>          
+    <div class="card-product">
+      <%= render 'shared/single_product' %>
+    </div>
+    <div class="">
+      <%= cl_image_tag @product.photo.key, class:'product-background-image' %>
     </div>
   </div>
 </div>
+
+
+
+<!-- SECOND TRY
+<div class="products-wrapper background-light">
+  <div class="banner img-fluid container" style="max-width: 100%; height: auto;">
+    <h1 class="products-title mb-5"><%= @product.name.upcase %></h1>
+    
+    <div class="product-content-wrapper">
+      <div class="product-content container">
+        <h5><%= @product.content %></h5>
+        <h5><%= @product.description %></h5>
+      </div>
+      <div class="single-product">
+        <%= render 'shared/single_product' %>          
+      </div>
+    </div>
+  </div>
+</div> -->

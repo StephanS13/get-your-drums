@@ -1,11 +1,29 @@
+.product-content-wrapper {
+  display:flex;
+  justify-content: space-evenly;
+}
+.product-content {
+  font-family: Roboto;
+  margin-top: 100px;
+  text-align: center;
+  width: 400px;
+}
+
+.single-product {
+  margin-top: 50px;
+  margin-right: 25%;
+}
+
 .product-background-image {
-  // background-image: url(asset-path(<%= %>));
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  height: 86.5%;
-  // width: 50%;
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
+  position:absolute;
+  top:0;
+  left:200px;
+  // width: 100%;
+  // max-height: 500px;
+  background-image: linear-gradient(to right, white -0.45%, rgba(255, 255, 255, 0) 67.73%) !important;
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-size: 300px 100px;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: center;
 }
