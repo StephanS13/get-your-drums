@@ -4,4 +4,5 @@ class Product < ApplicationRecord
   has_one_attached :photo
   has_one_attached :audio
   # has_many :samplers, foreign_key: :sampler_id
+  has_many :order_items
 end
