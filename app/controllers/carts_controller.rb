@@ -1,11 +1,17 @@
 class CartsController < ApplicationController
+
+  def show
+    @order_items = current_order.order_items
+  end
+
+
   def index
     @products = Product.all
   end
 
   def create
     @products = Product.find(params[:product_id])
-    @cart = Cart.new(rental_request_params)
+    @cart = Cart.new(cart_params)
 
     # number_of_days = @rental_request.end_date - @rental_request.start_date
     # @rental_request.total_price = @instrument.price_per_day * number_of_days

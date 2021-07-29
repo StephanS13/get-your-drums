@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'products/machines'
   get 'products/instruments'
   get 'products/other_kits'
+  get 'carts/show'
   
   
   devise_for :users
@@ -22,8 +23,9 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :show]
   resources :sampler, only: [:index], :path => '/sampler'
   resources :sampler, only: [:show], :path => '/sampler/show'
-  resources :carts, only: [:index], :path => '/user/cart'
+  resources :carts, only: [:show], :path => '/user/cart'
   resources :orders, only: [:index], :path => '/user/order'
+  resources :order_items
 
   root to: "pages#home"
 end

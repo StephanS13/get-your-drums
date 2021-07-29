@@ -42,6 +42,8 @@
 <div class="mpc-banner container">
   <h1 class="text-center">TRY THE<span class=""> KITS </span>ON OUR <span class="red">SAMPLER</span></h1>
   <div class="mpc-container">
-    <%= render 'shared/mpc' %>
+    <%= link_to sampler_index_path do %>
+      <%= render 'shared/mpc' %>
+    <% end %>
   </div>
 </div>

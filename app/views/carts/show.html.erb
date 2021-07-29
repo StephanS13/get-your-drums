@@ -1,0 +1,8 @@
+<% @order_items.each do |item| %>
+  <h3><%= item.product.title %></h3>
+  <h5><%= item.product.price %></h5>
+<% end %>
+
+<div id="cart-item">
+  <%= render 'carts_item'%>
+</div>
