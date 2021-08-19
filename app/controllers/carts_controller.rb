@@ -2,8 +2,8 @@ class CartsController < ApplicationController
 
   def show
     @order_items = current_order.order_items
+    @cart = @current_cart
   end
-
 
   def index
     @products = Product.all
@@ -12,19 +12,15 @@ class CartsController < ApplicationController
   def create
     @products = Product.find(params[:product_id])
     @cart = Cart.new(cart_params)
-
-    # number_of_days = @rental_request.end_date - @rental_request.start_date
-    # @rental_request.total_price = @instrument.price_per_day * number_of_days
-
-    # @rental_request.status = "en attente"
-    # @rental_request.instrument = @instrument
-
-    # if @rental_request.save!
-    #   redirect_to profile_path
-    # else
-    #   render "instruments/show"
-    # end
   end
+
+  def destroy
+    @cart = @current_cart
+    @cart.destroy
+    session[:cart_id] = nil
+    redirect_to root_path
+  end
+  
 
   private
   
