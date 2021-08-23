@@ -20,7 +20,8 @@
             <% end %>
             <div class="add-to-cart d-flex justify-content-between">
               <p class="card-text" style="color:red; font-weight:600"><%= link_to sampler_path(product), class: "btn btn-outline-danger" do %>Try Now!</p><% end %></small></p>
-              <p><small class="text-muted"><%= link_to product_path(product), class: "btn btn-success" do %>
+              
+              <p><small class="text-muted"><%= button_to line_items_path(:product_id => product.id), class: "btn btn-success" do %>
                 Add to cart
               <% end %></small></p>
             </div>
