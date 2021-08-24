@@ -19,7 +19,7 @@ class Order1sController < ApplicationController
       item.update(cart_id: nil)
     end
     @order.save
-    Cart1.destroy(session[:cart_id])
+    Cart.destroy(session[:cart_id])
     session[:cart_id] = nil
     redirect_to root_path
   end
@@ -27,7 +27,7 @@ class Order1sController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:name, :email, :address, :pay_method)
+    params.require(:order1).permit(:name, :email, :address, :pay_method)
   end
 end
 

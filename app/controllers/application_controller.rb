@@ -12,17 +12,7 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
-
   before_action :current_cart
-
-  # LOGIC
-  def sub_total
-    sum = 0
-    self.line_items.each do |line_item|
-      sum+= line_item.total_price
-    end
-    return sum
-  end
 
   private
 

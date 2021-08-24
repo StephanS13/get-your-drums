@@ -12,7 +12,7 @@
           <div class="card-body">
             <h5 class="card-title">
             <%= link_to product_path(product) do %>
-              <%= product.name %><span class="price-span">$<%= product.price %>0</span>
+              <%= product.name %><span class="price-span"><%= number_to_currency(product.price) %></span>
             <% end %></h5>
             <p class="card-text description mt-3">
             <%= link_to product_path(product) do %>
